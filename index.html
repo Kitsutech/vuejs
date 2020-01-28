@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Practice</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="firstDiv">
+    <p>number is: {{ number }}</p>
+  </div>
+
+  <script>
+    var firstVue = new Vue({
+      el: '#firstDiv',
+      data: {
+        number: 1
+      }
+    });
+
+    firstVue.number = 5;
+  </script>
+
+</body>
+
+</html>
